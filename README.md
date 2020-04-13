@@ -30,14 +30,15 @@ var reduceTags = function(key, values) {
 }
 ```
 
-**b)** Provide execution command for running MapReduce
-Running this requires the 2 other functions to exist
+**b)** Provide execution command for running MapReduce  
+
+Running this requires the 2 other functions to exist  
 This will output everything into a new place called "hash_tags"
 ```javascript
 db.tweets.mapReduce(mapTags, reduceTags, {out: "hash_tags"})
 ```
 
-**c)** Provide top 10 recorded out of the sorted results
+**c)** Provide top 10 recorded out of the sorted results  
 Using a sort function on our mapReduce function we can sort and limit the amount of output to 10 and will show the top 10 hashtags.
 ```javascript
 db.tweets.mapReduce(mapTags, reduceTags, {out: "hash_tags"}).find().sort({ 'value': -1 }).limit(10)
