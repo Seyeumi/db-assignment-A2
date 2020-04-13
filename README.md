@@ -2,6 +2,8 @@
 
 ## [Assignment link](<MongoDBExercise.pdf>)
 
+mongorestore --db twitter --collection tweet datasets/tweets.bson 
+
 ### What is sharding?
 - What is sharding in MongoDB
 - What are the different components required to implement sharding?
