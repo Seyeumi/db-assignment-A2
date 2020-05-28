@@ -1,5 +1,9 @@
 # Assignment A2 MongoDB
 
+Made by 
+- Oliver Lønning
+- Mathias Igel
+
 ## [Assignment link](<MongoDBExercise.pdf>)
 
 ### What is sharding?
